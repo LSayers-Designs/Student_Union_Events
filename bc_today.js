@@ -24,6 +24,7 @@ var	thisDay = thisDate.getDay();
 var eventHTML = getEvent(thisDay) /*the wording in the book does not make  sense*/
 document.getElementById("unionToday").insertAdjacentHTML("beforeEnd", dateHTML+eventHTML); /*the wording in the book does not make sense*/
 
+//Switch Function based that is driven by corresponding days as determined by global givens above
 function getEvent(day) {
    var eventHTML;
    switch (day) {
